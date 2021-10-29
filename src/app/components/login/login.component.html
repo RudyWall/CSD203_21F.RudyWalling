@@ -1,8 +1,9 @@
+<header>
+    <h1 *ngIf="auth.isLoggedIn()">you are signed in as {{auth.getUserData().email}}!</h1>
+</header> 
 <ion-label>Input email:</ion-label>
 <ion-input type="email"></ion-input>
 <ion-label>Input Password:</ion-label>
 <ion-input type="Password"></ion-input>
 <ion-button (click)="signIn()">Sign In</ion-button>
-<header>
-<h1 *ngIf="auth.isLoggedIn()">Welcome you are now logged in!</h1>
-</header> 
+<button (click)="signInWithGoogle()">Sign in with Google</button>

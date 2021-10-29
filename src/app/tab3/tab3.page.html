@@ -15,3 +15,6 @@
 
   <app-explore-container name="Tab 3 page"></app-explore-container>
 </ion-content>
+<ion-list>
+  <ion-item *ngFor="let login of database.logins">{{login.email)) - {{login.loginData | date:'medium'}}</ion-item>
+</ion-list>
